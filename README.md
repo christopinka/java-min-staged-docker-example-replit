@@ -81,7 +81,9 @@ RUN jlink --module-path /opt/java/openjdk/jmods --add-modules java.base,java.log
 CMD ["/app/jre/bin/java", "-jar", "/app/myapp.jar"]
 ```
 
-
+# Run DockerFile
+ - `sudo service docker start`
+ - `docker build -t java-app .`
 # Notes
 
 https://snyk.io/blog/best-practices-to-build-java-containers-with-docker/
